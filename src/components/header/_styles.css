@@ -1,0 +1,52 @@
+.header {
+  height: 100px;
+  display: flex;
+  margin: 0 40px;
+}
+
+.header__block {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__block--align-right {
+  justify-content: flex-end;
+}
+
+.header__block--align-left {
+  justify-content: flex-start;
+}
+
+.header__logo {
+  width: 180px;
+}
+
+@media screen and (max-width: 540px) {
+  .header__logo {
+    width: 120px;
+    margin: 0 15px;
+  }
+}
+
+.header__icon {
+  display: block;
+  font-size: 25px;
+  width: 30px;
+  height: 25px;
+  margin-right: 15px;
+  color: #333333;
+}
+
+.header__icon--pointer {
+  cursor: pointer;
+}
+
+.header__icon--pointer:hover {
+  color: #666666;
+}
+
+.header__icon:last-child {
+  margin-right: 0;
+}
