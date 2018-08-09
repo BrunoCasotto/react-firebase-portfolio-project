@@ -52,4 +52,6 @@ module.exports = {
   appNodeModules: resolveApp('node_modules'),
   publicUrl: getPublicUrl(resolveApp('package.json')),
   servedPath: getServedPath(resolveApp('package.json')),
+  components: path.resolve('..','src', 'components'),
+  styles: path.resolve('..','src', 'styles')
 };

@@ -4,9 +4,6 @@ import './_styles.css'
 import Swiper from 'swiper'
 
 class Slider extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
     return (
@@ -29,7 +26,7 @@ class Slider extends React.Component {
   }
 
   componentDidMount() {
-    var mySwiper = new Swiper('.swiper-container', {
+    new Swiper('.swiper-container', {
       centeredSlides: true,
       simulateTouch: true,
       autoplay: 500,
