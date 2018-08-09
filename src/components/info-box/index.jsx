@@ -6,8 +6,8 @@ class InfoBox extends React.Component {
 
   render() {
     return (
-      <div class="info-box">
-
+      <div className="info-box">
+        Info box
       </div>
     )
   }
