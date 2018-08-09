@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './App.css'
-import ProductPage from './pages/Product.jsx'
+import '_styles/global.css'
+import ProductPage from '_pages/Product.jsx'
 import Header from '_components/header/index.jsx'
 
 class App extends Component {
