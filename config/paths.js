@@ -54,5 +54,6 @@ module.exports = {
   servedPath: getServedPath(resolveApp('package.json')),
   components: path.resolve('src', 'components'),
   styles: path.resolve('src', 'styles'),
-  pages: path.resolve('src', 'pages')
+  pages: path.resolve('src', 'pages'),
+  mocks: path.resolve('src', 'mocks')
 };
