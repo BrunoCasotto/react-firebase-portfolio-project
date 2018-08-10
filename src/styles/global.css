@@ -3,6 +3,7 @@
   font-family: Roboto-Black,sans-serif;
   text-transform: uppercase;
   color: #333333;
+  margin: 0;
 }
 
 .sub-title {
@@ -10,4 +11,5 @@
   font-family: Roboto-Black,sans-serif;
   text-transform: uppercase;
   color: #333333;
+  margin: 5px 0;
 }
