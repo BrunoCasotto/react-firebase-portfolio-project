@@ -10,7 +10,7 @@ function ProductPage () {
   return (
     <div className="product-page">
       <div className="product-page__slider">
-        <Slider />
+        <Slider {...productMocks}/>
       </div>
       <div className="product-page__infoBox">
         <InfoBox {...productMocks} />

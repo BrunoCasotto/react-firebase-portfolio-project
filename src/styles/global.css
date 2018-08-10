@@ -1,0 +1,13 @@
+.title {
+  font-size: 24px;
+  font-family: Roboto-Black,sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}
+
+.sub-title {
+  font-size: 20px;
+  font-family: Roboto-Black,sans-serif;
+  text-transform: uppercase;
+  color: #333333;
+}

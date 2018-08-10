@@ -1,5 +1,13 @@
 .info-box {
-  background: #000000;
+  background-color: rgba(255,255,255,.7);
   width: 100%;
   height: 200px;
+  display: flex;
+  align-items: center;
+}
+
+.info-box__info {
+  text-align: left;
+  margin-top: 50px;
+  padding-left: 40px;
 }

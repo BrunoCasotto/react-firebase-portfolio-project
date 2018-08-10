@@ -5,17 +5,25 @@ import Swiper from 'swiper'
 
 class Slider extends React.Component {
 
+  createSlides() {
+    let slides = []
+  
+    this.props.images.forEach(img => {
+      slides.push(
+        <div class="swiper-slide slider__wrapper__slide">
+          <img src={img} alt="product" />
+        </div>
+      )
+    })
+
+    return slides
+  }
+
   render() {
     return (
       <div class="swiper-container slider">
         <div class="swiper-wrapper slider__wrapper">
-          <div class="swiper-slide slider__wrapper__slide">
-            <img src="https://static-hmg-freelace-com-br.ns2online.com.br/produtos/tenis-nike-air-precision-masculino/26/D12-6810-026/D12-6810-026_zoom2.jpg?resize=*:720" alt="product" />
-          </div>
-
-          <div class="swiper-slide slider__wrapper__slide">
-            <img src="https://static-hmg-freelace-com-br.ns2online.com.br/produtos/tenis-nike-air-precision-masculino/26/D12-6810-026/D12-6810-026_zoom2.jpg?resize=*:720" alt="product" />
-          </div>
+          {this.createSlides()}
         </div>
 
         <div class="swiper-pagination"></div>
