@@ -17,4 +17,15 @@
   flex: 1;
   display: flex;
   justify-content: flex-start;
+  flex-direction: column;
+}
+
+.accordeon {
+  width: 200px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 200px;
+  margin-top: 10px;
 }

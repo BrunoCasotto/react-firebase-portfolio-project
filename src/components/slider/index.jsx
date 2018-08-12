@@ -10,7 +10,7 @@ class Slider extends React.Component {
   
     this.props.images.forEach(img => {
       slides.push(
-        <div class="swiper-slide slider__wrapper__slide">
+        <div className="swiper-slide slider__wrapper__slide" key={img}>
           <img src={img} alt="product" />
         </div>
       )
@@ -21,14 +21,14 @@ class Slider extends React.Component {
 
   render() {
     return (
-      <div class="swiper-container slider">
-        <div class="swiper-wrapper slider__wrapper">
+      <div className="swiper-container slider">
+        <div className="swiper-wrapper slider__wrapper">
           {this.createSlides()}
         </div>
 
-        <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev swipper-button fas fa-angle-left"></div>
-        <div class="swiper-button-next swipper-button fas fa-angle-right"></div>
+        <div className="swiper-pagination"></div>
+        <div className="swiper-button-prev swipper-button fas fa-angle-left"></div>
+        <div className="swiper-button-next swipper-button fas fa-angle-right"></div>
       </div>
     )
   }

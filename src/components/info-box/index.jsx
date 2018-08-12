@@ -2,6 +2,7 @@
 import React from 'react'
 import './_styles.css'
 import Button from '_components/button'
+import Accordeon from '_components/accordeon'
 
 class InfoBox extends React.Component {
 
@@ -20,6 +21,9 @@ class InfoBox extends React.Component {
           <Button 
             text="Comprar"
             onAction={this.buy}
+          />
+          <Accordeon
+            text="text"
           />
         </div>
       </div>

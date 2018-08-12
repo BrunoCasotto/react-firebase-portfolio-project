@@ -2,7 +2,6 @@
 import React from 'react'
 import Slider from '_components/slider'
 import InfoBox from '_components/info-box'
-import Button from '_components/button'
 import productMocks from '_mocks/product.json'
 
 import './_product.css'
