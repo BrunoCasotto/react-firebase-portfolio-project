@@ -11,3 +11,10 @@
   margin-top: 50px;
   padding-left: 40px;
 }
+
+.info-box__controller {
+  padding-left: 60px;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+}
