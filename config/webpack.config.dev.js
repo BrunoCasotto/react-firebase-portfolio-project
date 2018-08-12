@@ -117,6 +117,7 @@ module.exports = {
           },
         ],
         include: paths.appSrc,
+        exclude: /node_modules/,
       },
       {
         // "oneOf" will traverse all following loaders until one will
@@ -138,6 +139,7 @@ module.exports = {
           {
             test: /\.(js|jsx|mjs)$/,
             include: paths.appSrc,
+            exclude: /node_modules/,
             loader: require.resolve('babel-loader'),
             options: {
               
@@ -154,6 +156,7 @@ module.exports = {
           // in development "style" loader enables hot editing of CSS.
           {
             test: /\.css$/,
+            exclude: /node_modules/,
             use: [
               require.resolve('style-loader'),
               {
