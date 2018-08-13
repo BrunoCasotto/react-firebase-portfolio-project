@@ -23,7 +23,7 @@ class InfoBox extends React.Component {
             onAction={this.buy}
           />
           <Accordeon
-            text="text"
+            text={this.props.description}
           />
         </div>
       </div>

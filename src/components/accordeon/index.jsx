@@ -20,12 +20,16 @@ class Accordeon extends React.Component {
     });
   }
 
+  createMarkup() {
+    return {__html: this.props.text}
+  }
+
   render() {
     return (
       <div onClick={this.toggle.bind(this)} className="accordeon fas fa-plus" >
-        <div className={`accordeon__content accordeon__content--${this.state.appearance}`}>
-          {this.props.text}
-        </div>
+        <div className={`accordeon__content accordeon__content--${this.state.appearance}`}
+          dangerouslySetInnerHTML={this.createMarkup()}
+        />
       </div>
     )
   }

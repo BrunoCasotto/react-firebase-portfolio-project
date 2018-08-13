@@ -13,6 +13,7 @@
 }
 
 .info-box__controller {
+  max-width: 400px;
   padding-left: 60px;
   flex: 1;
   display: flex;
@@ -21,11 +22,9 @@
 }
 
 .accordeon {
-  width: 200px;
   margin-top: 10px;
 }
 
 .btn {
-  width: 200px;
   margin-top: 10px;
 }

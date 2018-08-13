@@ -2,6 +2,7 @@
     font-size: 25px;
     color: #666;
     cursor: pointer;
+    background: #fff;
 }
 
 .accordeon:hover {
@@ -9,13 +10,14 @@
 }
 
 .accordeon__content {
-    overflow: hidden;
+    overflow-x: scroll;
     opacity: 0;
     max-height: 0;
     transition: all .5s ease;
+    color: #333;
 }
 
 .accordeon__content--open {
-    max-height: 300px;
+    max-height: 500px;
     opacity: 1;
 } 
