@@ -17,6 +17,12 @@
   transform: translate(-50%, -50%);
 }
 
+@media screen and (max-width: 930px) {
+  .slider__wrapper__slide img {
+    width: 100%;
+  }
+}
+
 .swiper-button-prev {
   background-image: none;
 }
