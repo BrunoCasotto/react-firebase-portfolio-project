@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
-import './App.css'
 import '_styles/global.css'
 import '_styles/reset.css'
+import './App.css'
 import ProductPage from '_pages/Product.jsx'
 import Header from '_components/header/index.jsx'
 

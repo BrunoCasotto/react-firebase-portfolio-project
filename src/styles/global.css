@@ -1,9 +1,19 @@
+/*Global display none class*/
+.hide {
+  display: none !important;
+}
+
+/*Global title none class*/
 .title {
   font-size: 24px;
   font-family: Roboto-Black,sans-serif;
   text-transform: uppercase;
   color: #333333;
   margin: 0;
+}
+
+.title--small {
+  font-size: 18px;
 }
 
 .sub-title {
@@ -14,6 +24,7 @@
   margin: 5px 0;
 }
 
+/*Global button class*/
 .btn {
   padding: 8px 15px;
   font-size: 24px;

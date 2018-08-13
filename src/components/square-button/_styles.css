@@ -1,0 +1,18 @@
+.square-button {
+  width: 30px;
+  height: 30px;
+  background-color: #666;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: Roboto-Black,sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  cursor: pointer;
+}
+
+.square-button:hover {
+  background-color: #999; 
+}
