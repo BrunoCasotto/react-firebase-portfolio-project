@@ -26,8 +26,8 @@ class Accordeon extends React.Component {
 
   render() {
     return (
-      <div onClick={this.toggle.bind(this)} className="accordeon fas fa-plus" >
-        <div className={`accordeon__content accordeon__content--${this.state.appearance}`}
+      <div onClick={this.toggle.bind(this)} className={`accordeon fas accordeon--${this.state.appearance}`}>
+        <div className="accordeon__content"
           dangerouslySetInnerHTML={this.createMarkup()}
         />
       </div>
