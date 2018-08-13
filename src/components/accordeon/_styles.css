@@ -1,39 +1,46 @@
 .accordeon {
-    font-size: 25px;
-    color: #666;
-    cursor: pointer;
+  font-size: 25px;
+  color: #666;
+  cursor: pointer;
 }
 
 .accordeon:hover {
-    color: #999;
+  color: #999;
 }
 
 .accordeon:before {
-    content: "\f067";
+  content: "\f067";
 }
 
 .accordeon--open:before {
-    content: "\f068"
+  content: "\f068"
 }
 
 .accordeon__content::-webkit-scrollbar { 
-    display: none; 
+  display: none; 
 }
 
 .accordeon__content {
-    overflow-y: scroll;
-    opacity: 0;
-    max-height: 0;
-    transition: all .5s ease;
-    color: #333;
-    padding: 10px;
-    font-size: 18px;
-    font-family: Roboto-Black,sans-serif;
+  overflow-y: scroll;
+  opacity: 0;
+  max-height: 0;
+  transition: all .5s ease;
+  color: #333;
+  padding: 20px 10px;
+  font-size: 18px;
+  font-family: Roboto-Black,sans-serif;
+  text-align: justify;
+}
+
+@media screen and (max-width: 1036px) {
+  .accordeon__content {
+      font-size: 16px;
+  }
 }
 
 
 .accordeon--open .accordeon__content {
-    max-height: 500px;
-    opacity: 1;
-    background: #fff;
+  max-height: 500px;
+  opacity: 1;
+  background: #fff;
 } 
