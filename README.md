@@ -1,11 +1,11 @@
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
-# Product page using react
-This is a simple product page created using react.
+# Portfolio page using react
+This is a simple portfolio page created using react and firebase as backend.
 
 ## Development mode
 ```
-$ git clone git@github.com:BrunoCasotto/product-page-react.git
-$ cd product-page-react
+$ git clone git@github.com:BrunoCasotto/react-firebase-portfolio-project.git
+$ cd react-firebase-portfolio-project
 $ yarn install
 $ yarn start
 ```
@@ -13,4 +13,4 @@ $ yarn start
 ```
 $ npm run build
 ```
-Project's website: https://react-product-page.herokuapp.com
+Project's website: in coming...
