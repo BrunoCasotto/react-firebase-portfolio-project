@@ -1,7 +1,8 @@
 @import 'styles/vars';
 
 .personal-skills {
-  height: $container-height;
+  height: auto;
+  min-height: $container-height;
   text-align: center;
   padding-top: 30px;
   background-image: url('./background.jpg');
@@ -10,8 +11,61 @@
   background-position: center;
   color: $color-light;
 
+  &__title {
+    margin-bottom: 20px;
+  }
+
   &__list {
     width: 100%;
     max-width: $container-width;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: wrap;
+  }
+
+  &__graphic {
+    text-align: left;
+    width: 50%;
+    padding: 10px;
+    margin-top: 0;
+
+    &__title {
+      margin-bottom: 10px;
+    }
   }
 }
+
+.battery {
+  padding: 10px;
+  display: flex;
+  width: 300px;
+  border: solid thin $background-primary;
+  position: relative;
+
+  &:after {
+    content: " ";
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    right: 0;
+    height: 20px;
+    width: 7px;
+    position: absolute;
+    background: $background-primary;
+  }
+}
+
+.bar {
+  cursor: pointer;
+  display: inline-block;
+  width: 0;
+  border: solid thin rgba(255, 255, 255, .1);
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  transition: background 1s;
+
+  &.active {
+    background: limegreen;
+  }
+}
+

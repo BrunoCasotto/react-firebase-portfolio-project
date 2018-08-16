@@ -23,11 +23,11 @@ class App extends Component {
       skills: {
         title: 'Minhas habilidades',
         list: [
-          {title: 'javascript', percent: '80'},
-          {title: 'html', percent: '80'},
-          {title: 'css', percent: '80'},
-          {title: 'node', percent: '80'},
-          {title: 'firebase', percent: '80'}
+          {title: 'javascript', percent: '90'},
+          {title: 'html', percent: '60'},
+          {title: 'css', percent: '70'},
+          {title: 'node', percent: '90'},
+          {title: 'firebase', percent: '50'}
         ]
       }
     }
