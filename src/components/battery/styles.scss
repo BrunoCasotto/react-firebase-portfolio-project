@@ -1,0 +1,36 @@
+@import 'styles/vars';
+
+.battery {
+  padding: 10px;
+  display: flex;
+  width: 300px;
+  border: solid thin $background-primary;
+  position: relative;
+
+  &:after {
+    content: " ";
+    top: 50%;
+    transform: translateY(-50%) translateX(100%);
+    right: 0;
+    height: 20px;
+    width: 7px;
+    position: absolute;
+    background: $background-primary;
+  }
+}
+
+.bar {
+  cursor: pointer;
+  display: inline-block;
+  width: 0;
+  border: solid thin rgba(255, 255, 255, .1);
+  height: 30px;
+  width: 30px;
+  background: transparent;
+  transition: background 1s;
+
+  &.active {
+    background: limegreen;
+  }
+}
+
