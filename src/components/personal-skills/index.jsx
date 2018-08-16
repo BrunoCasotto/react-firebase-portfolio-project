@@ -7,7 +7,9 @@ const PersonalSkills = ({skills}) => {
   const renderSkillList = (list) => {
     return list.map(skill => {
       return <div className="personal-skills__graphic">
-        <h3 className="title title--small title--slim personal-skills__graphic__title">{skill.title}</h3>
+        <h3 className="title title--small title--light title--slim personal-skills__graphic__title">
+          {skill.title}
+        </h3>
         <div className="personal-skills__battery">
         <Battery
           percent={skill.percent}
@@ -19,7 +21,7 @@ const PersonalSkills = ({skills}) => {
 
   return (
     <div className="personal-skills">
-      <h1 className="title title--big personal-skills__title">{skills.title}</h1>
+      <h1 className="title title--light title--big personal-skills__title">{skills.title}</h1>
 
       <div className="personal-skills__list">
         {renderSkillList(skills.list)}

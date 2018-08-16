@@ -3,6 +3,7 @@ import Header from './components/header'
 import Avatar from './components/avatar'
 import PersonalDetail from './components/personal-detail'
 import PersonalSkills from './components/personal-skills';
+import PersonalWorks from './components/personal-works';
 
 import './app.css'
 
@@ -27,9 +28,57 @@ class App extends Component {
           {title: 'html', percent: '60'},
           {title: 'css', percent: '70'},
           {title: 'node', percent: '90'},
-          {title: 'firebase', percent: '50'}
+          {title: 'firebase', percent: '50'},
+          {title: 'php', percent: '30'}
         ]
       }
+    },
+    works: {
+      title: 'Meus projetos',
+      list: [
+        {
+          title: 'Product page', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/001.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        },
+        {
+          title: 'List Page', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/002.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        },
+        {
+          title: 'Vue project', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/003.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        },
+        {
+          title: 'Rabbit Project', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/004.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        },
+        {
+          title: 'Virtual Dom Project', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/005.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        },
+        {
+          title: 'Third Page', 
+          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
+          image: 'https://signakro.com/temp/porte/assets/img/grid-column/006.jpg',
+          link: 'https://url.to.project',
+          linkLabel: 'acessse'
+        }
+      ]
     }
   }
 
@@ -53,6 +102,11 @@ class App extends Component {
           <div className="main__content__skills">
             <PersonalSkills
               skills={this.state.profile.skills}
+            />
+          </div>
+          <div className="main__content__works">
+            <PersonalWorks
+              works={this.state.works}
             />
           </div>
         </div>

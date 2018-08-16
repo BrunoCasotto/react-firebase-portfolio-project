@@ -27,7 +27,7 @@
   height: 30px;
   width: 30px;
   background: transparent;
-  transition: background 1s;
+  transition: background .8s;
 
   &.active {
     background: limegreen;

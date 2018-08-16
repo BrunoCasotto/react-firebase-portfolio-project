@@ -3,6 +3,7 @@
 .title {
   font-size: 24px;
   font-weight: 600;
+  color: $color-primary;
   
   &--big {
     font-size: 60px;
@@ -19,12 +20,23 @@
   &--sub {
     font-size: 35px;
   }
+
+  &--light {
+    color: $color-light;
+  }
 }
 
 .text {
-
   &--justify {
     text-align: justify;
+  }
+
+  &--light {
+    color: $color-light;
+  }
+
+  &--bold {
+    font-weight: 600;
   }
 }
 
@@ -35,5 +47,30 @@
 
   &:hover {
     color: lighten($color-green-light, 20)
+  }
+}
+
+.btn {
+  padding: 10px;
+  font-weight: 600;
+  display: block;
+  border: solid 1px $color-primary;
+  color: $color-primary;
+  &:hover {
+    background: $color-light;
+    color: $color-light;
+  }
+
+  &--light {
+    border: solid 1px $color-light;
+    color: $color-light;
+    &:hover {
+      background: $color-light;
+      color: $color-primary;
+    }
+  }
+
+  &--slim {
+    font-weight: 300;
   }
 }
