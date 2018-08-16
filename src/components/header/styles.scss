@@ -3,13 +3,12 @@
 .header {
   height: 400px;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
   background-image: url('./background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  padding-top: 100px;
 
   &__title {
     color: $color-light;

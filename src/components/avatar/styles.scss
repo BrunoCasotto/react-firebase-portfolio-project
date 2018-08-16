@@ -6,7 +6,8 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  border: 1px solid lighten($color-primary, 70);
+  border: 2px solid lighten($color-primary, 70);
+  background: $background-primary;
 
   &__figure {
     width: 280px;
