@@ -1,20 +1,17 @@
 @import 'styles/vars';
 
-.header {
+.personal-skills {
   height: $container-height;
-  width: 100%;
   text-align: center;
+  padding-top: 30px;
   background-image: url('./background.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 80px;
+  color: $color-light;
 
-  &__title, &__subtitle {
-    color: $color-light;
-  }
-
-  &__social {
-    margin-top: 20px;
+  &__list {
+    width: 100%;
+    max-width: $container-width;
   }
 }
