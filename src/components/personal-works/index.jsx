@@ -9,7 +9,7 @@ const PersonalWorks = ({works}) => {
         backgroundImage: `url(${work.image})`
       }
 
-      return <div className="personal-works__list__item"  style={background}>
+      return <div className="personal-works__list__item"  style={background} key={work.title}>
         <h3 className="title personal-works__list__title">
           {work.title}
         </h3>

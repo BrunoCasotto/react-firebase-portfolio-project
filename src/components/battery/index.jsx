@@ -8,14 +8,14 @@ const renderBatteryPercent = (percent) => {
     const status = percent >= x * 10 ? 'bar active' : 'bar'
 
     percentList.push(
-      <div class={status} data-power='10'></div>
+      <div className={status} data-power='10' key={percent * x}></div>
     )
   }
 
   return percentList
 }
 const Battery = ({percent}) => {
-  return <div class='battery'>
+  return <div className='battery'>
     {renderBatteryPercent(percent)}
   </div>
 }

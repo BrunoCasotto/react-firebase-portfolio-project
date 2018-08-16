@@ -16,6 +16,7 @@ class App extends Component {
     ],
     profile: {
       name: 'Bruno Casotto',
+      picture: 'https://scontent.frao1-2.fna.fbcdn.net/v/t1.0-9/25446022_1473650679355533_2365959638548040256_n.jpg?_nc_cat=0&oh=ab64bc942d84565a4dcaee7a01bd2271&oe=5C135DA2',
       job: 'Front end enginner',
       description: {
         title: 'Detalhes pessoais',
@@ -91,7 +92,9 @@ class App extends Component {
         />
         <div className="main__content">
           <div className="main__content__avatar">
-            <Avatar />
+            <Avatar 
+              picture={this.state.profile.picture}
+            />
           </div>
 
           <div className="main__content__details">
@@ -110,6 +113,9 @@ class App extends Component {
             />
           </div>
         </div>
+        <footer>
+          Portfolio - {this.state.profile.name}
+        </footer>
       </div>
     )
   }

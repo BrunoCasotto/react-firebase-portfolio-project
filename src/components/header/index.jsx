@@ -5,8 +5,8 @@ const Header = ({socialList, profile}) => {
 
   const renderSocial = (socialList) => {
     return socialList.map( social => {
-      return <a href={social.url} target="_blank">
-        <i class={`fab fa-${social.icon} icon`}></i>
+      return <a href={social.url} target="_blank" key={social.url}>
+        <i className={`fab fa-${social.icon} icon`}></i>
       </a>
     })
   }

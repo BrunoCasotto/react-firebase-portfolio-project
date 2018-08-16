@@ -1,9 +1,8 @@
 import React from 'react'
 import './styles.css'
 
-const Avatar = () => {
-  const picture = '/perfil.jpg'
-  
+const Avatar = ({picture}) => {
+
   return (
     <div className="avatar">
       <figure className="avatar__figure">

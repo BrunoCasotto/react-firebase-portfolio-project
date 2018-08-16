@@ -6,7 +6,7 @@ const PersonalSkills = ({skills}) => {
 
   const renderSkillList = (list) => {
     return list.map(skill => {
-      return <div className="personal-skills__graphic">
+      return <div className="personal-skills__graphic" key={skill.title}>
         <h3 className="title title--small title--light title--slim personal-skills__graphic__title">
           {skill.title}
         </h3>
