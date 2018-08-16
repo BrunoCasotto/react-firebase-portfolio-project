@@ -8,4 +8,18 @@
   &--big {
     font-size: 60px;
   }
+
+  &--slim {
+    font-weight: 300;
+  }
+}
+
+.icon {
+  font-size: 30px;
+  color: $color-green-light;
+  margin-right: 20px;
+
+  &:hover {
+    color: lighten($color-green-light, 20)
+  }
 }
