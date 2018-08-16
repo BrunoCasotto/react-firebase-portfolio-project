@@ -1,0 +1,26 @@
+@import 'styles/vars';
+
+.avatar {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 1px solid lighten($color-primary, 70);
+
+  &__figure {
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    overflow: hidden;
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    border: 1px solid lighten($color-primary, 70);
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
