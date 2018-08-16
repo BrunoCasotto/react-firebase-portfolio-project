@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const Header = ({socialList}) => {
+const Header = ({socialList, profile}) => {
 
   const renderSocial = (socialList) => {
     return socialList.map( social => {
@@ -13,8 +13,8 @@ const Header = ({socialList}) => {
 
   return (
     <header className="header">
-      <h1 className="title title--big header__title">Bruno Casotto</h1>
-      <h2 className="title title--slim header__subtitle">Front end enginner</h2>
+      <h1 className="title title--big header__title">{profile.name}</h1>
+      <h2 className="title title--slim header__subtitle">{profile.job}</h2>
 
       <div className="header__social">
         {renderSocial(socialList)}
