@@ -4,9 +4,15 @@
   font-size: 24px;
   font-weight: 600;
   color: $color-primary;
+  @media screen and(max-width: $breakpoint-sm) {
+    font-size: 18px;
+  }
   
   &--big {
     font-size: 60px;
+    @media screen and(max-width: $breakpoint-sm) {
+      font-size: 40px;
+    }
   }
 
   &--slim {
@@ -15,10 +21,16 @@
 
   &--small {
     font-size: 20px;
+    @media screen and(max-width: $breakpoint-sm) {
+      font-size: 18px;
+    }
   }
 
   &--sub {
     font-size: 35px;
+    @media screen and(max-width: $breakpoint-sm) {
+      font-size: 25px;
+    }
   }
 
   &--light {
