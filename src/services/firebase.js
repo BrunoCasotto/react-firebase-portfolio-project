@@ -1,6 +1,7 @@
 
 import Firebase from 'firebase'
 import 'firebase/database'
+import { resolve } from 'upath';
 
 class FirebaseConnector {
 
@@ -19,11 +20,11 @@ class FirebaseConnector {
     this.database = Firebase.database()
   }
 
-  async getData() {
-    return await this.database.ref('/')
-      .on('value', (snapshot) => {
-        return snapshot.val()
-      })
+  getData(callback) {
+    this.database.ref('/')
+    .on('value', (snapshot) => {
+      callback(snapshot.val())
+    })
   }
 }
 

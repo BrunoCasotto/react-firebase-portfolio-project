@@ -12,87 +12,36 @@ class App extends Component {
 
   state = {
     socialList: [
-      {icon: 'github', 'url': 'https://github.com/brunocasotto'},
-      {icon: 'facebook', 'url': 'https://www.facebook.com/profile.php?id=100001318441034'},
-      {icon: 'linkedin', 'url': 'https://www.linkedin.com/in/brunocasotto/'}
     ],
     profile: {
-      name: 'Bruno Casotto',
-      picture: 'https://scontent.frao1-2.fna.fbcdn.net/v/t1.0-9/25446022_1473650679355533_2365959638548040256_n.jpg?_nc_cat=0&oh=ab64bc942d84565a4dcaee7a01bd2271&oe=5C135DA2',
-      job: 'Front end enginner',
+      name: '',
+      picture: '',
+      job: '',
       description: {
-        title: 'Detalhes pessoais',
-        content: 'é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.'
+        title: '',
+        content: ''
       },
       skills: {
-        title: 'Minhas habilidades',
-        list: [
-          {title: 'javascript', percent: '90'},
-          {title: 'html', percent: '60'},
-          {title: 'css', percent: '70'},
-          {title: 'node', percent: '90'},
-          {title: 'firebase', percent: '50'},
-          {title: 'php', percent: '30'}
-        ]
+        title: '',
+        list: []
       }
     },
     works: {
-      title: 'Meus projetos',
-      list: [
-        {
-          title: 'Product page', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/001.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        },
-        {
-          title: 'List Page', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/002.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        },
-        {
-          title: 'Vue project', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/003.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        },
-        {
-          title: 'Rabbit Project', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/004.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        },
-        {
-          title: 'Virtual Dom Project', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/005.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        },
-        {
-          title: 'Third Page', 
-          description: 'simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI',
-          image: 'https://signakro.com/temp/porte/assets/img/grid-column/006.jpg',
-          link: 'https://url.to.project',
-          linkLabel: 'acessse'
-        }
-      ]
+      title: '',
+      list: []
     }
+  }
+  componentDidMount() {
+    this.fetchData()
   }
 
   fetchData() {
-    firebase.getData().then(result => {
-      console.log(result)
+    firebase.getData((result) => {
+      this.setState({...result})
     })
   }
 
   render() {
-    this.fetchData()
     return (
       <div className="main">
         <Header 
