@@ -17,8 +17,6 @@ class App extends Component {
       topWallpaper: '',
       mdWallpaper: ''
     },
-    socialList: [
-    ],
     profile: {
       name: '',
       picture: '',
@@ -27,6 +25,8 @@ class App extends Component {
         title: '',
         content: ''
       },
+      socialList: [
+      ],
       skills: {
         title: '',
         list: []
@@ -58,7 +58,6 @@ class App extends Component {
     return (
       <div className="main">
         <Header 
-          socialList={this.state.socialList}
           profile={this.state.profile}
           website={this.state.website}
         />

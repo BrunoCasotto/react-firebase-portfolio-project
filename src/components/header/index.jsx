@@ -21,7 +21,7 @@ const Header = ({socialList, profile, website}) => {
       <h2 className="title title--slim header__subtitle">{profile.job}</h2>
 
       <div className="header__social">
-        {renderSocial(socialList)}
+        {renderSocial(profile.socialList)}
       </div>
     </header>
   )
