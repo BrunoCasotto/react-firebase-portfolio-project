@@ -1,7 +1,7 @@
 import React from 'react'
 import './styles.css'
 
-const Header = ({socialList, profile}) => {
+const Header = ({socialList, profile, website}) => {
 
   const renderSocial = (socialList) => {
     return socialList.map( social => {
@@ -11,8 +11,12 @@ const Header = ({socialList, profile}) => {
     })
   }
 
+  const background = {
+    backgroundImage: `url(${website.topWallpaper})`
+  }
+
   return (
-    <header className="header">
+    <header className="header" style={background}>
       <h1 className="title title--big header__title">{profile.name}</h1>
       <h2 className="title title--slim header__subtitle">{profile.job}</h2>
 

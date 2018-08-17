@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.css'
 import Battery from '../battery'
 
-const PersonalSkills = ({skills}) => {
+const PersonalSkills = ({skills, website}) => {
 
   const renderSkillList = (list) => {
     return list.map(skill => {
@@ -19,8 +19,12 @@ const PersonalSkills = ({skills}) => {
     })
   }
 
+  const background = {
+    backgroundImage: `url(${website.mdWallpaper})`
+  }
+
   return (
-    <div className="personal-skills">
+    <div className="personal-skills" style={background}>
       <h1 className="title title--light title--big personal-skills__title">{skills.title}</h1>
 
       <div className="personal-skills__list">

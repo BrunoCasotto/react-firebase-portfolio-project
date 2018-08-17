@@ -3,14 +3,14 @@ import './styles.css'
 
 
 const Loader = ({percent}) => {
-  return <div class="overlay">
-    <div class="  overlay__loader">
+  return <div className="overlay">
+    <div className="  overlay__loader">
       Preparando o perfil...
     </div>
-    <div class="overlay__loader">
+    <div className="overlay__loader">
       Configurando o layout...
     </div>
-    <div class="overlay__loader">
+    <div className="overlay__loader">
       Finalizando...
     </div>
   </div>

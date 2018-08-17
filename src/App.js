@@ -13,6 +13,10 @@ class App extends Component {
 
   state = {
     loaded: false,
+    website: {
+      topWallpaper: '',
+      mdWallpaper: ''
+    },
     socialList: [
     ],
     profile: {
@@ -56,6 +60,7 @@ class App extends Component {
         <Header 
           socialList={this.state.socialList}
           profile={this.state.profile}
+          website={this.state.website}
         />
         <div className="main__content">
           <div className="main__content__avatar">
@@ -72,6 +77,7 @@ class App extends Component {
           <div className="main__content__skills">
             <PersonalSkills
               skills={this.state.profile.skills}
+              website={this.state.website}
             />
           </div>
           <div className="main__content__works">
