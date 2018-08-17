@@ -4,6 +4,7 @@ import Avatar from './components/avatar'
 import PersonalDetail from './components/personal-detail'
 import PersonalSkills from './components/personal-skills';
 import PersonalWorks from './components/personal-works';
+import Loader from './components/loader'
 import firebase from './services/firebase'
 
 import './app.css'
@@ -11,6 +12,7 @@ import './app.css'
 class App extends Component {
 
   state = {
+    loaded: false,
     socialList: [
     ],
     profile: {
@@ -31,17 +33,23 @@ class App extends Component {
       list: []
     }
   }
+
   componentDidMount() {
     this.fetchData()
   }
 
   fetchData() {
     firebase.getData((result) => {
-      this.setState({...result})
+      this.setState({loaded: true, ...result})
     })
   }
 
   render() {
+    if(!this.state.loaded) {
+      return (
+        <Loader />
+      )
+    }
     return (
       <div className="main">
         <Header 
