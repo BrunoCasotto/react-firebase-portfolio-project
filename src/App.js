@@ -4,10 +4,12 @@ import Avatar from './components/avatar'
 import PersonalDetail from './components/personal-detail'
 import PersonalSkills from './components/personal-skills';
 import PersonalWorks from './components/personal-works';
+import firebase from './services/firebase'
 
 import './app.css'
 
 class App extends Component {
+
   state = {
     socialList: [
       {icon: 'github', 'url': 'https://github.com/brunocasotto'},
@@ -83,7 +85,14 @@ class App extends Component {
     }
   }
 
+  fetchData() {
+    firebase.getData().then(result => {
+      console.log(result)
+    })
+  }
+
   render() {
+    this.fetchData()
     return (
       <div className="main">
         <Header 

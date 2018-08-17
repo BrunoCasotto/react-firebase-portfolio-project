@@ -19,12 +19,11 @@ class FirebaseConnector {
     this.database = Firebase.database()
   }
 
-  getData() {
-    const reference = this.database.ref('/')
-    return reference.on('value', (snapshot) => {
-      console.log('service', snapshot.val())
-      return snapshot.val()
-    })
+  async getData() {
+    return await this.database.ref('/')
+      .on('value', (snapshot) => {
+        return snapshot.val()
+      })
   }
 }
 
