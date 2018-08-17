@@ -42,19 +42,13 @@
     @media screen and(min-width: $breakpoint-sm) {
       &__item:hover {
         .personal-works__list__title {
-          top: 10px;
+          top: 20px;
           transform: translate(-50%, 0%);
-          color: $color-light;
         }
   
         .personal-works__list__text {
           top: 50%;
           transform: translate(-50%, -50%);
-          color: $color-light;
-        }
-  
-        &:before {
-          opacity: .5;
         }
   
       }
@@ -68,7 +62,7 @@
       width: 100%;
       height: 100%;
       background: $color-primary;
-      opacity: 0;
+      opacity: .5;
       transition: all .8s ease;
       @media screen and(max-width: $breakpoint-sm) {
         opacity: .5;
@@ -82,10 +76,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all .8s ease;
+      font-size: 25px;
+      font-weight: 600;
       @media screen and(max-width: $breakpoint-sm) {
         top: 10px;
         transform: translate(-50%, 0%);
-        color: $color-light;
       }
     }
 
@@ -98,7 +93,6 @@
       @media screen and(max-width: $breakpoint-sm) {
         top: 50%;
         transform: translate(-50%, -50%);
-        color: $color-light;
       }
     }
 

@@ -10,10 +10,10 @@ const PersonalWorks = ({works}) => {
       }
 
       return <div className="personal-works__list__item"  style={background} key={work.title}>
-        <h3 className="title personal-works__list__title">
+        <h3 className="title title--light personal-works__list__title">
           {work.title}
         </h3>
-        <p className="text text--justify text--bold personal-works__list__text">
+        <p className="text text--light text--justify text--bold personal-works__list__text">
           {work.description}
           <a className="btn btn--slim btn--light personal-works__list__button" href={work.link}>
             {work.linkLabel}
