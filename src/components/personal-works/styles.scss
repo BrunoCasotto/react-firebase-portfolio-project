@@ -6,6 +6,9 @@
   text-align: center;
   padding-top: 30px;
   color: $color-primary;
+  @media screen and(max-width: $breakpoint-sm) {
+    padding: 30px 20px;
+  }
 
   &__title {
     margin-bottom: 20px;
@@ -21,32 +24,39 @@
 
     &__item {
       height: 300px;
-      min-width: 350px;
+      min-width: 290px;
+      width: calc(50% - 40px);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
       margin: 10px;
-      width: calc(50% - 40px);
       position: relative;
       cursor: pointer;
       overflow: hidden;
+      @media screen and(max-width: $breakpoint-sm) {
+        width: 100%;
+        margin: 0 0 20px 0;
+      }
     }
 
-    &__item:hover {
-      .personal-works__list__title {
-        top: 10px;
-        transform: translate(-50%, 0%);
-        color: $color-light;
-      }
-
-      .personal-works__list__text {
-        top: 50%;
-        transform: translate(-50%, -50%);
-        color: $color-light;
-      }
-
-      &:before {
-        opacity: .5;
+    @media screen and(min-width: $breakpoint-sm) {
+      &__item:hover {
+        .personal-works__list__title {
+          top: 10px;
+          transform: translate(-50%, 0%);
+          color: $color-light;
+        }
+  
+        .personal-works__list__text {
+          top: 50%;
+          transform: translate(-50%, -50%);
+          color: $color-light;
+        }
+  
+        &:before {
+          opacity: .5;
+        }
+  
       }
     }
 
@@ -60,6 +70,9 @@
       background: $color-primary;
       opacity: 0;
       transition: all .8s ease;
+      @media screen and(max-width: $breakpoint-sm) {
+        opacity: .5;
+      }
     }
 
     &__title {
@@ -69,6 +82,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       transition: all .8s ease;
+      @media screen and(max-width: $breakpoint-sm) {
+        top: 10px;
+        transform: translate(-50%, 0%);
+        color: $color-light;
+      }
     }
 
     &__text {
@@ -77,6 +95,11 @@
       left: 50%;
       transform: translate(-50%, 0);
       transition: all .8s ease;
+      @media screen and(max-width: $breakpoint-sm) {
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: $color-light;
+      }
     }
 
     &__button {

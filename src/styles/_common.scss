@@ -68,9 +68,12 @@
   display: block;
   border: solid 1px $color-primary;
   color: $color-primary;
-  &:hover {
-    background: $color-light;
-    color: $color-light;
+  text-align: center;
+  @media screen and(min-width: $breakpoint-sm) {
+    &:hover {
+      background: $color-light;
+      color: $color-light;
+    }
   }
 
   &--light {

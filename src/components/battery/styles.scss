@@ -6,6 +6,9 @@
   width: 300px;
   border: solid thin $background-primary;
   position: relative;
+  @media screen and(max-width: $breakpoint-sm) {
+    width: 100%;
+  }
 
   &:after {
     content: " ";
