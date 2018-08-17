@@ -50,6 +50,7 @@ class App extends Component {
         <Loader />
       )
     }
+
     return (
       <div className="main">
         <Header 
